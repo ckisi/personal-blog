@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Makes a flex box and centers the contents */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Creates two sides for the page */
+.side1, .side2 {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side1 {
+    flex: 1;
+    padding: 10px;
+    position: relative;
+}
+
+.side2 {
+    flex: 1;
+    padding: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stretches input fields across the whole section */
+.input-group input {
+width: 100%;
+padding: 5px;
+margin-bottom: 10px;
+}
+
+.input-group label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+/* Creates the border down the center, without messing up the content */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    border-left: 12px double #000000; /* Creates a double border style */
+}
+
+/* Styles the submit button */
+button#submit {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Creates yellow circle behind the title */
+.side1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+    width: 20%;
+    padding-top: 20%;
+    border: 3px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    z-index: -1;
+}
