@@ -3,6 +3,9 @@ const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
 
+// Accesses existing posts or creates a new array for a new post
+let posts = JSON.parse(localStorage.getItem('posts')) || [];
+
 // Submits the blog data and logs it to local storage
 submitButton.addEventListener('click', function(event) {
     event.preventDefault();
@@ -14,9 +17,17 @@ submitButton.addEventListener('click', function(event) {
     if (username === '' || title === '' || content === '') {
         window.alert('Please complete the form');
     } else {
-    localStorage.setItem('username', username);
-    localStorage.setItem('title', title);
-    localStorage.setItem('content', content);
+    const post = {
+        username: usernameInput.value.trim(),
+        title: titleInput.value.trim(),
+        content: contentInput.value.trim(),
+    };
+    
+    //Adds the post to the posts array
+    posts.push(post);
+
+    //Logs the posts in local storage
+    localStorage.setItem('posts', JSON.stringify(posts));
     
     // Clears the input fields
     usernameInput.value = '';
