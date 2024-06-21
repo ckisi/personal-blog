@@ -67,6 +67,7 @@ button#submit {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Creates yellow circle behind the title */
