@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 12px double #000000;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button1 {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #323233;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modebutton {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 90%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
