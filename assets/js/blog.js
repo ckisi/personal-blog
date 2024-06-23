@@ -1,4 +1,9 @@
 const container = document.querySelector('.container');
+const backButton = document.querySelector('.button1');
+
+backButton.addEventListener('click', function() {
+    window.location.href = '../index.html';
+});
 
 // Posts the information from local storage onto the website as individual cards
 function renderPosts() {

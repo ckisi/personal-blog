@@ -36,9 +36,26 @@ body {
 
 .header-text {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 
 /* Selects all .card that are descendants of .dark-mode */
 .dark-mode .card {
     border: 1px solid #ffffff;
+}
+
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.side1header {
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.side2header {
+    font-size: 150%;
+    font-weight: 600;
 }

@@ -75,12 +75,13 @@ button#submit {
     content: "";
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 27%;
     transform: translateY(-50%);
-    width: 20%;
+    width: 45%;
+    height: 200%;
     padding-top: 20%;
-    border: 3px solid yellow;
-    background-color: yellow;
+    border: 3px solid #ffe02f;
+    background-color: #ffe02f;
     border-radius: 50%;
     z-index: -1;
 }
