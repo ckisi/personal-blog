@@ -10,6 +10,7 @@
     display: flex;
 }
 
+/* Back button styling */
 .button1 {
     margin-left: 10px;
     padding: 5px 10px;
@@ -19,6 +20,7 @@
     cursor: pointer;
 }
 
+/* Dark mode button styling */
 .modebutton {
     margin-left: 10px;
     padding: 5px 10px;
@@ -32,6 +34,7 @@
     flex-wrap: wrap;
 }
 
+/* The styling for the blog posts */
 .card {
     flex: 1 0 90%;
     margin: 10px;
