@@ -1,10 +1,13 @@
 const container = document.querySelector('.container');
 
+// Posts the information from local storage onto the website as individual cards
 function renderPosts() {
     const storedPosts = JSON.parse(localStorage.getItem('posts'));
+    // Loops through all of the stored posts
     for (let i = 0; i < storedPosts.length; i++) {
         const post = storedPosts[i];
         
+        // Creates the new elements and gives them the content from local storage
         const section = document.createElement('section');
         section.classList.add('card');
 
@@ -17,6 +20,7 @@ function renderPosts() {
         const para2 = document.createElement('p');
         para2.textContent = post.username;
 
+        //Appends all of the created elements to their respective parent
         section.appendChild(heading);
         section.appendChild(para1);
         section.appendChild(para2);

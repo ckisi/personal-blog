@@ -86,6 +86,16 @@ button#submit {
 }
 
 .header {
+    display: flex;
     border-bottom: 12px double #000000;
     padding: 10px;
+    justify-content: right;
+}
+
+.modebutton {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
 }

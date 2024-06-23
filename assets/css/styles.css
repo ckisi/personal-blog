@@ -1,0 +1,44 @@
+:root {
+    --darkmode-bg: #202020;
+    --lightmode-bg: #ffffff;
+    --darkmode-text: #ffffff;
+    --lightmode-text: #202020;
+}
+
+/* Makes the background of the sun button change when it is hovered on */
+#modeButton:hover {
+    background-color: #c0c0c0;
+}
+
+/* Light mode*/
+body {
+    background-color: var(--lightmode-bg);
+    color: var(--lightmode-text);
+}
+
+/* Dark mode */
+.dark-mode {
+    background-color: var(--darkmode-bg);
+    color: var(--darkmode-text);
+}
+
+.side1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.side2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.posts {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Selects all .card that are descendants of .dark-mode */
+.dark-mode .card {
+    border: 1px solid #ffffff;
+}
