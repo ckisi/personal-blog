@@ -35,6 +35,6 @@ submitButton.addEventListener('click', function(event) {
     contentInput.value = '';
 
     // Redirects to blog posts page
-    window.location.href = '../blog.html';
+    window.location.href = 'https://ckisi.github.io/blog.html';
     }
 });
