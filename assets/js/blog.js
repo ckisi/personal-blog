@@ -2,7 +2,7 @@ const container = document.querySelector('.container');
 const backButton = document.querySelector('.button1');
 
 backButton.addEventListener('click', function() {
-    window.location.href = '../index.html';
+    window.location.href = 'https://ckisi.github.io/personal-blog/';
 });
 
 // Posts the information from local storage onto the website as individual cards
