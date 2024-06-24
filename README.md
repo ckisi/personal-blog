@@ -16,3 +16,6 @@ https://github.com/ckisi/personal-blog
 ## Screenshots
 ![screenshot1](./assets/blogss1.png)
 ![screenshot2](./assets/blogss2.png)
+
+## Credits
+Xpert Learning Assistant: for help with the dark mode JavaScript
