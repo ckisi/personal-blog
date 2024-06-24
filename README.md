@@ -10,6 +10,9 @@ Fill out all three of the input fields and click submit. What you inputed will b
 HTML, CSS, JavaScript
 
 ## Links
-
+https://ckisi.github.io/personal-blog/
+https://github.com/ckisi/personal-blog
 
 ## Screenshots
+![screenshot1](
+![screenshot2](
